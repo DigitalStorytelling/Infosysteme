@@ -1,28 +1,45 @@
 package ExersiceTwo
 
-import redis.clients.jedis.Jedis
-import scala.io.Source
+import redis.clients.jedis.{JedisPool, JedisPoolConfig}
 
-object main {
+import scala.concurrent.ExecutionContext.Implicits.global
+import scala.concurrent.Future
+import scala.io.StdIn
 
-  val host = "localhost"
-  val port = 6379
-  val jedis = new Jedis(host, port)
+object Main {
+  private val host = "localhost"
+  private val port = 6379
+  private val poolConfig = new JedisPoolConfig()
+  poolConfig.setMaxTotal(10)
+  poolConfig.setMaxIdle(5)
+
+  private val jedis = new JedisPool(poolConfig, host, port)
 
   def main(args: Array[String]): Unit = {
 
-    for (line <- Source.fromFile("C:\\Users\\janin\\data\\data\\goalscorers.csv").getLines) {
-      val cols = line.split(",").map(_.trim)
-      jedis.hset("", cols(0), cols(1))
+    val dataLoader = LoadData(port, host)
+    dataLoader.loadAll()
+
+    System.out.println("~~ Press any key to close ~~")
+    execute(Queries(jedis), "Gerd Müller", 15, 20)
+    StdIn.readLine
+  }
+
+  private def execute(redis: SimpleQueries, player: String, min: Int, max: Int): Unit = {
+
+    val countGoals = redis.countGoals(player).map { goals =>
+      println(s"number of goals by $player: $goals")
     }
 
-    //look at hash
-    val result = jedis.hget("1", "Date")
+    val rangeGoals = redis.countRangeGoals(min, max).map { count =>
+      println(s"number of games with at least $min and at most $max goals: $count")
+    }
 
+    val isConsistent = redis.isConsistent().map { answer =>
+      if (answer) println("no inconsistent records in table 'goalscorers' found...")
+      else println("INCONSISTENT RECORDS in table 'goalscorers' found...")
+    }
+
+    Future.sequence(Seq(countGoals, rangeGoals, isConsistent)).onComplete(_ => redis.close())
   }
-
-  def close(): Unit = {
-        jedis.close()
-  }
-
 }

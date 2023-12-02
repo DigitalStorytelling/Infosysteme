@@ -1,0 +1,47 @@
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 64 products, 7 sources, 3 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/ExerciseOne/SimpleQueries.scala, ${BASE}/src/main/scala/ExerciseOne/SlickQueries.scala, ${BASE}/src/main/scala/ExerciseOne/generateTables.scala, ${BASE}/src/main/scala/ExerciseOne/JdbcQueries.scala, ${BASE}/src/main/scala/ExerciseOne/Execute.scala, ${BASE}/src/main/scala/ExersiceTwo/main.scala, ${BASE}/src/main/scala/ExerciseOne/Tables.scala, ${BASE}/src/main/scala/ExerciseOne/footballTables/Tables.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(${BASE}/src/main/scala/ExersiceTwo/main.scala), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial source changes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	removed: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	added: Set(${BASE}/src/main/scala/ExersiceTwo/main.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/src/main/scala/ExersiceTwo/main.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
+[0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\Users\janin\IdeaProjects\InfoSysteme\target\scala-2.13\classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mReturning already retrieved and compiled bridge: C:\Users\janin\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala2-sbt-bridge\2.13.12\scala2-sbt-bridge-2.13.12.jar.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 1e26b4fa for Scala compiler version 2.13.12[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\janin\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.12\scala-library-2.13.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\janin\IdeaProjects\InfoSysteme\target\scala-2.13\classes;C:\Users\janin\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\janin\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\typesafe\slick\slick_2.13\3.4.1\slick_2.13-3.4.1.jar;C:\Users\janin\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\slf4j\slf4j-nop\2.0.5\slf4j-nop-2.0.5.jar;C:\Users\janin\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\typesafe\slick\slick-hikaricp_2.13\3.4.1\slick-hikaricp_2.13-3.4.1.jar;C:\Users\janin\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\typesafe\slick\slick-codegen_2.13\3.4.1\slick-codegen_2.13-3.4.1.jar;C:\Users\janin\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\redis\clients\jedis\4.4.0\jedis-4.4.0.jar;C:\Users\janin\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\slf4j\slf4j-api\2.0.5\slf4j-api-2.0.5.jar;C:\Users\janin\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\typesafe\config\1.4.2\config-1.4.2.jar;C:\Users\janin\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\janin\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-collection-compat_2.13\2.8.1\scala-collection-compat_2.13-2.8.1.jar;C:\Users\janin\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\zaxxer\HikariCP\4.0.3\HikariCP-4.0.3.jar;C:\Users\janin\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\apache\commons\commons-pool2\2.11.1\commons-pool2-2.11.1.jar;C:\Users\janin\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\json\json\20230227\json-20230227.jar;C:\Users\janin\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from ExersiceTwo.main...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: ExersiceTwo.main[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(ExersiceTwo.main)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(ExersiceTwo.main,ModifiedNames(changes = UsedName(eq,[Default]), UsedName(finalize,[Default]), UsedName(isInstanceOf,[Default]), UsedName(main,[Default]), UsedName(getClass,[Default]), UsedName(==,[Default]), UsedName(##,[Default]), UsedName(ne,[Default]), UsedName(clone,[Default]), UsedName(notifyAll,[Default]), UsedName(toString,[Default]), UsedName(wait,[Default]), UsedName(notify,[Default]), UsedName(!=,[Default]), UsedName(asInstanceOf,[Default]), UsedName(equals,[Default]), UsedName(synchronized,[Default]), UsedName(hashCode,[Default]))) invalidates 1 classes due to The ExersiceTwo.main has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(eq,[Default]), UsedName(finalize,[Default]), UsedName(isInstanceOf,[Default]), UsedName(main,[Default]), UsedName(getClass,[Default]), UsedName(==,[Default]), UsedName(##,[Default]), UsedName(ne,[Default]), UsedName(clone,[Default]), UsedName(notifyAll,[Default]), UsedName(toString,[Default]), UsedName(wait,[Default]), UsedName(notify,[Default]), UsedName(!=,[Default]), UsedName(asInstanceOf,[Default]), UsedName(equals,[Default]), UsedName(synchronized,[Default]), UsedName(hashCode,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > by transitive inheritance: Set(ExersiceTwo.main)[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > [0m
+[0m[[0m[0mdebug[0m] [0m[0m  > [0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
+[0m[[0m[0mdebug[0m] [0m[0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0mFinal step, transitive dependencies:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mNo classes were invalidated.[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 6.2030167 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mdone compiling[0m

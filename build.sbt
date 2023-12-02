@@ -15,4 +15,5 @@ libraryDependencies ++= Seq(
   "com.typesafe.slick" %% "slick-codegen" % "3.4.1",
   // Aufgabe 2
   "redis.clients" % "jedis" % "4.4.0"
+  //Aufgabe 3
 )
